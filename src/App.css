@@ -9,8 +9,7 @@ body {
   background-color: #F4F5F7;
 }
 .nawbar {
-  width: 100vw;
-  padding: 2rem;
+  padding: 2rem 0;
   display: flex;
   align-items: center;
   justify-content: end;
@@ -38,32 +37,28 @@ body {
 
 .header {
   width: 100vw;
-  height: 100vh;
+  height: auto;
+}
+
+.head_left {
+  position: relative;
+  width: 100%;
+  height: 580px;
 }
 
 .titles {
   position: absolute;
-  top: 20%;
-  left: 100px;
+  top: 0;
+  left: 0;
+  width: 600px;
   font-size: 50px;
   z-index: 99;
 }
 
-.head_right {
-  background-color: rgba(209, 206, 206, 0.356);
-  position: relative;
-  height: 500px ;
-}
-
-.sub {
-  color: #4E0F8A;
-}
-
 .head_card {
   position: absolute;
-  /* top: 50%; */
-  left: 100px;
-  bottom: 40px;
+  left: 0;
+  bottom: 0;
   width: 600px;
   height: auto;
   padding: 3rem;
@@ -74,11 +69,27 @@ body {
   line-height: 40px;
 }
 
+.sub {
+  color: #4E0F8A;
+}
+
+
+.head_right {
+  background-color: rgba(209, 206, 206, 0.356);
+  position: relative;
+  /* background-color: green; */
+  height: 500px ;
+}
+
+
+
 .card_girl {
   position: absolute;
   top: -10%;
-  left: 10%;
+  left: 20%;
+  width: 600px;
 }
+
 
 .girl{
   object-fit: cover;
@@ -89,11 +100,15 @@ body {
 
 
 
+
+
+
+
+
 .sect_1 {
   font-size: 25px;
   color: #4E0F8A;
 }
-
 
 .sect_2 {
   font-size: 20px;
@@ -102,10 +117,20 @@ body {
   color: #4E0F8A;
 }
 
-
 .first {
   font-size: 55px;
 }
+
+.for_width {
+  width: 580px;
+}
+
+
+
+
+
+
+
 
 
 
@@ -175,7 +200,7 @@ body {
 
 
 .sect2_left_static3 {
-  width: 200px;
+  width: 300px;
   height: 270px;
   margin-right: 2rem;
   padding: 0.5rem;
@@ -202,6 +227,22 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .section3 {
   width: 100vw;
   height: auto;
@@ -222,7 +263,7 @@ body {
 
 .section_image {
   width: 100vw;
-  height: 100vh;
+  height: auto;
   position: relative;
 }
 
@@ -232,15 +273,10 @@ body {
   left: 0;
   background-color: #ECF0F3;
   width: 75%;
-  height: 66%;
+  height: 90%;
   z-index: -99;
 }
 
-.telefon {
-  position: absolute;
-  top: 0;
-  left: 40%;
-}
 
 .rectangle {
   width: 20px;
@@ -253,6 +289,124 @@ body {
   height: 20px;
   background-color: #ECF0F3;
 }
+
+.card_tel {
+  position: relative;
+}
+
+
+
+
+
+
+
+@media (max-width: 991px) {
+  .titles {
+    top: 30%;
+    left: 20px ;
+    font-size: 40px;
+  }
+  .head_card {
+    left: 20px;
+    bottom: -100px;
+    font-size: 18px;
+    padding: 1rem;
+    width: 500px;
+  }
+  .card_girl {
+    left: 0%;
+  }
+
+  
+}
+
+@media (max-width: 768px) {
+  
+  .titles {
+    top: 0;
+    left: 0;
+    width: 350px;
+    font-size: 40px;
+  }
+  .head_left {
+    height: 350px;
+  }
+  .head_card {
+    left: 0;
+    font-size: 15px;
+    line-height: 25px;
+    width: 350px;
+  }
+  .head_right {
+    background-color: transparent;
+    width: 100%;
+    overflow-x: hidden;
+    right: 0;
+
+  }
+  .girl {
+    object-fit: contain;
+  } 
+
+  .sect_1 {
+    font-size: 20px;
+  }
+
+  .for_width {
+    width: 800px !important;
+    padding: 0 2rem;
+    /* background-color: red; */
+  }
+  .first {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .titles {
+    top: 0;
+    width: 300px;
+    font-size: 35px;
+  }
+  .head_left {
+    height: 300px;
+  }
+  .head_card {
+    font-size: 15px;
+    line-height: 20px;
+    width: 250px;
+  }
+  .head_right {
+    background-color: transparent;
+    overflow-x: hidden;
+
+  }
+  .girl {
+    object-fit: contain;
+  }
+
+  .sec2_bg {
+    width: 100%;
+    height: 100%;
+  }
+  .left_col6_card {
+    padding: 0;
+  }
+
+  .sect2_left_static3  {
+    width: 155px;
+    margin-right: 0;
+  }
+
+  .sect3_right {
+    padding-top: 0;
+  }
+ 
+}
+
+
+
 
 
 
@@ -329,7 +483,7 @@ body {
 
 .footer {
   width: 100vw;
-  height: 400px;
+  height: 300px;
   background-image: url('./assets/foot_img.png');
   background-position: center;
   background-repeat: no-repeat;
@@ -354,37 +508,3 @@ body {
 
 
 
-@media (max-width: 991px) {
-  .titles {
-    top: 30%;
-    left: 20px ;
-    font-size: 40px;
-  }
-  .head_card {
-    left: 20px;
-    bottom: -100px;
-    font-size: 18px;
-    padding: 1rem;
-    width: 500px;
-  }
-  .card_girl {
-    left: 0%;
-  }
-  .girl {
-    width: auto;
-    object-fit: cover;
-    height: 600px !important;
-    width: 500px;
-    margin-left: 5rem;
-  }
-
-}
-
-
-@media (max-width: 768px) {
- 
-}
-
-@media (max-width: 576px) {
-
-}

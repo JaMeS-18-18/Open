@@ -14,43 +14,60 @@ import opa2 from './assets/opa2.png'
 function App() {
   return (
     <div className="App">
-      <div className=' nawbar'>
-        <div>
-          <img className='img-fluid mx-2' src={rus} alt="" />
-          <p className='mt-2'>русский</p>
-        </div>
-        <div>
-          <img className='img-fluid mx-2' src={uzb} alt="" />
-          <p className='mt-2'>uzbek</p>
+      <div className='container'>
+        <div className=' nawbar'>
+          <div>
+            <img className='img-fluid mx-2' src={rus} alt="" />
+            <p className='mt-2'>русский</p>
+          </div>
+          <div>
+            <img className='img-fluid mx-2' src={uzb} alt="" />
+            <p className='mt-2'>uzbek</p>
+          </div>
         </div>
       </div>
 
 
-      <div className='header'>
+
+
+
+
+      <div className='header mb-lg-5'>
         <div className=''>
-          <div class="row">
-            <div className=' col-md-2 col-lg-4 '>
-              <div className='head_left'>
-                <div className='titles'>
-                  <p>OPEN</p>
-                  <p className='sub'>MUDDATLI TO'LOV</p>
-                </div>
-                <div className='head_card'>
-                  <p>To'lov xizmatlari, karta va kredit mahsulotlari sohasidagi innovatsion yechimlar.
-                    Sodiq mijozlar, maqsadli trafik va qo'shimcha mahsulot aylanmasiga ega bo'ling</p>
+          <div className='container'>
+            <div class="row">
+              <div className='col-3 col-lg-4  '>
+                <div className='head_left '>
+                  <div className='titles'>
+                    <p>OPEN</p>
+                    <p className='sub'>MUDDATLI TO'LOV</p>
+                  </div>
+                  <div className='head_card'>
+                    <p>To'lov xizmatlari, karta va kredit mahsulotlari sohasidagi innovatsion yechimlar.
+                      Sodiq mijozlar, maqsadli trafik va qo'shimcha mahsulot aylanmasiga ega bo'ling</p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className=' col-12 col-md-10 col-lg-8 '>
+
+            <div className=' col-9 col-lg-8 '>
               <div className='head_right'>
                 <div className='card_girl'>
                   <img className='img-fluid girl' src={girl} alt="" />
                 </div>
               </div>
             </div>
+            </div>
+
           </div>
         </div>
       </div>
+
+
+    
+
+
+
+
 
       <div className='section'>
         <div className='container'>
@@ -62,12 +79,12 @@ function App() {
             </div>
 
             <div className='sect_2 col-12 my-3 justify-content-center justify-content-md-end '>
-              <div className='w-50'>
+              <div className='for_width'>
                 <span className='first  fs-md-1'>
                   OPEN <span className='text-dark'> muddatli kartasi - </span>
                   Bu biznesingiz o’sishi va rivojlanishi
                 </span>
-                <div className='my-3'>
+                <div className='my-3 text-dark'>
                   Biz bilan hamkorlik qilish daromadingizni oshiradi va bozordagi raqobatdosh mavqeingizni mustahkamlaydi.
                   Open mijozlarga qimmatroq xaridlar uchun pul beradi
                 </div>
@@ -83,13 +100,13 @@ function App() {
         </div>
       </div>
 
-      <div className='section2'>
+      <div className='section2 h-100 mb-5'>
         <div className='sec2_bg'></div>
         <div className='container'>
           <div className='row'>
-            <div className='col-8'>
+            <div className='col-lg-8'>
               <div className='row'>
-                <div className='col-12 col-md-6'>
+                <div className=' col-6'>
                   <div className='left_col6_card'>
                     <div>
                       <div className='d-flex'><p className='me-3 text-secondary'>Muddatli to’lovsiz</p> <p>A muzlatgichi</p></div>
@@ -97,12 +114,12 @@ function App() {
                     </div>
 
                     <div className='set2_left'>
-                      <div className='d-flex align-items-center'><p className='sect2_left_static'>Foyda 20%</p> <p>1 mln So’m</p></div>
-                      <div className='d-flex align-items-center'><p className='sect2_left_static2'>Tannarx</p> <p>4 mln So’m</p></div>
+                      <div className='d-flex align-items-center'><p className='sect2_left_static'>Foyda 20%</p> <p className='d-none d-sm-flex'>1 mln So’m</p></div>
+                      <div className='d-flex align-items-center'><p className='sect2_left_static2'>Tannarx</p> <p className='d-none d-sm-flex'>4 mln So’m</p></div>
                     </div>
                   </div>
                 </div>
-                <div className='col-12 col-md-6'>
+                <div className=' col-6'>
                   <div className='left_col6_card'>
                     <div>
                       <div className='d-flex'><p className='me-3 text-secondary'>Muddatli to’lovsiz</p> <p>A muzlatgichi</p></div>
@@ -110,14 +127,14 @@ function App() {
                     </div>
 
                     <div className='set2_left2'>
-                      <div className='d-flex align-items-center'><p className='sect2_left_statics'>Foyda 20%</p> <p>1 mln So’m</p></div>
-                      <div className='d-flex align-items-center'><p className='sect2_left_static3'>Tannarx</p> <p>4 mln So’m</p></div>
+                      <div className='d-flex align-items-center'><p className='sect2_left_statics'>Foyda 20%</p> <p className='d-none d-sm-flex'>1 mln So’m</p></div>
+                      <div className='d-flex align-items-center'><p className='sect2_left_static3'>Tannarx</p> <p className='d-none d-sm-flex'>4 mln So’m</p></div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className='col-4 d-none d-md-block sect2_col4 p-0'>
+            <div className='col-4 d-none d-lg-block sect2_col4 p-0'>
               <div className='sect2_imgcard'>
                 <img className='' src={boy} alt="" />
               </div>
@@ -126,10 +143,10 @@ function App() {
         </div>
       </div>
 
-      <div className='section3'>
+      <div className='section3 mt-5'>
         <div className='container'>
           <div className='row'>
-            <div className='col-6 sect3_left'>
+            <div className='col-md-6 sect3_left'>
               <div className='sect_1 my-5 h-25'>
                 <span className='text-dark'>
                   <span className='sect_1 me-3'>02</span> Yangi mijozlar va xaridlar sonining oshishi
@@ -148,7 +165,7 @@ function App() {
                 </span>
               </div>
             </div>
-            <div className='col-6 sect3_right'>
+            <div className='col-md-6 sect3_right'>
               <p className='my-5 h-25'>
                 Siz faqat Open kartasi orqali amalga oshirilgan xaridlar uchun komissiya to'laysiz. Biz barcha o'zaro hisob-kitoblarni o'zimiz tashkil qilamiz va soliq masalalari bo'yicha mutaxassislaringizga maslahat beramiz
               </p>
@@ -161,14 +178,14 @@ function App() {
       </div>
 
       <div className='section_image'>
-        <div className='sect_img_bg'></div>
+        <div className='sect_img_bg d-none d-md-flex'></div>
         <div className='container'>
           <div className='row'>
-            <div className='col-6'>
-              <img className='' src={opa} alt="" />
+            <div className='col-12 col-md-6 d-none d-md-flex '>
+              <img className='img-fluid' src={opa} alt="" />
             </div>
-            <div className='col-6'>
-              <img className='telefon' src={telefon} alt="" />
+            <div className='col-12 col-md-6  card_tel'>
+              <img className='telefon img-fluid ' src={telefon} alt="" />
             </div>
           </div>
         </div>
@@ -305,10 +322,10 @@ function App() {
               </div>
             </div>
 
-            <div className='col-md-6'>
+            <div className='col-md-6 '>
               <img className='img-fluid' src={oka} alt="" />
             </div>
-            <div className='col-md-6'>
+            <div className='col-md-6 '>
               <div className='purple_card'>
                 <p>01</p>
                 <p className='fs-5'>Faol karta mijozlari sonining oshishi
