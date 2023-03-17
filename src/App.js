@@ -9,28 +9,30 @@ import xarita from './assets/xarita.png'
 import contact_bg from './assets/contact_bg.png'
 import oka from './assets/oka.png'
 import opa2 from './assets/opa2.png'
-
+import { useTranslation } from 'react-i18next'
 
 function App() {
+  
+  const {t, i18n} = useTranslation();
+
+  const changeLanguage = (til) => {
+    i18n.changeLanguage(til)
+  }
+
   return (
     <div className="App">
       <div className='container'>
-        <div className=' nawbar'>
-          <div>
+        <div className='nawbar'>
+          <div onClick={() => changeLanguage("ru")}>
             <img className='img-fluid mx-2' src={rus} alt="" />
             <p className='mt-2'>русский</p>
           </div>
-          <div>
+          <div onClick={() => changeLanguage("uz")}>
             <img className='img-fluid mx-2' src={uzb} alt="" />
             <p className='mt-2'>uzbek</p>
           </div>
         </div>
       </div>
-
-
-
-
-
 
       <div className='header mb-lg-5'>
         <div className=''>
@@ -40,17 +42,17 @@ function App() {
                 <div className='head_left '>
                   <div className='titles'>
                     <p>OPEN</p>
-                    <p className='sub'>MUDDATLI TO'LOV</p>
+                    <p className='sub'>{t("H_title")}</p>
                   </div>
                   <div className='head_card'>
-                    <p>To'lov xizmatlari, karta va kredit mahsulotlari sohasidagi innovatsion yechimlar.
-                      Sodiq mijozlar, maqsadli trafik va qo'shimcha mahsulot aylanmasiga ega bo'ling</p>
+                    <p>{t("H_subtitle")}</p>
                   </div>
                 </div>
               </div>
 
-            <div className=' col-9 col-lg-8 '>
+            <div className=' col-9 col-lg-8 opa'>
               <div className='head_right'>
+                <div className='head_bg'></div>
                 <div className='card_girl'>
                   <img className='img-fluid girl' src={girl} alt="" />
                 </div>
@@ -62,23 +64,16 @@ function App() {
         </div>
       </div>
 
-
-    
-
-
-
-
-
       <div className='section'>
         <div className='container'>
           <div className='row'>
-            <div className='sect_1 col-12 my-3'>
+            <div className='sect_1  my-3 ps-3'>
               <span>
                 <span className='me-3'>-</span> Savdo va xizmat ko'rsatish korxonalari uchun
               </span>
             </div>
 
-            <div className='sect_2 col-12 my-3 justify-content-center justify-content-md-end '>
+            <div className='sect_2  my-3 justify-content-center justify-content-md-end '>
               <div className='for_width'>
                 <span className='first  fs-md-1'>
                   OPEN <span className='text-dark'> muddatli kartasi - </span>
@@ -91,7 +86,7 @@ function App() {
               </div>
             </div>
 
-            <div className='sect_1 col-12 my-3'>
+            <div className='sect_1  my-3'>
               <span className='text-dark'>
                 <span className='sect_1 me-3'>01</span> O'rtacha chekning va foydangizning o’sishi
               </span>
@@ -100,7 +95,7 @@ function App() {
         </div>
       </div>
 
-      <div className='section2 h-100 mb-5'>
+      <div className='section2  mb-5'>
         <div className='sec2_bg'></div>
         <div className='container'>
           <div className='row'>
@@ -278,10 +273,9 @@ function App() {
       </div>
 
       <div className='section_contact'>
-        <div className='contact_bg'>
-          <img className='img-fluid' src={contact_bg} alt="" />
-        </div>
+        
         <div className='container'>
+          <div className='contact'>
           <div className='contact_card'>
             <div className='row'>
               <div className=' col-12 col-sm-6'>
@@ -295,10 +289,11 @@ function App() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
 
-      <div className='footer_info my-5'>
+      <div className='footer_info'>
         <div className='container'>
           <div className='row'>
             <div className='sect_1 col-12 my-3'>
@@ -322,10 +317,10 @@ function App() {
               </div>
             </div>
 
-            <div className='col-md-6 '>
+            <div className='col-md-6 p-0'>
               <img className='img-fluid' src={oka} alt="" />
             </div>
-            <div className='col-md-6 '>
+            <div className='col-md-6 d-none d-md-block'>
               <div className='purple_card'>
                 <p>01</p>
                 <p className='fs-5'>Faol karta mijozlari sonining oshishi
@@ -355,7 +350,7 @@ function App() {
               </div>
 
             </div>
-            <div className='col-md-4 h-75 '>
+            <div className='col-md-4 h-75 opa'>
               <div className='opa2_img_card'>
                 <img className='img-fluid ' src={opa2} alt="" />
               </div>
@@ -380,7 +375,7 @@ function App() {
         </div>
       </div>
 
-      <div className='footer'>
+      <div className='footer mt-5'>
         <div className='row'>
           <div className='col-12 d-flex justify-content-center align-items-center'>
             <div className='foot_info'>
