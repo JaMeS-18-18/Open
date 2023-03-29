@@ -113,7 +113,7 @@ body {
 
 
 .sect_1 {
-  font-size: 25px;
+  font-size: 30px;
   color: #4E0F8A;
 }
 
@@ -125,7 +125,7 @@ body {
 }
 
 .first {
-  font-size: 55px;
+  font-size: 65px;
 }
 
 .for_width {
@@ -175,7 +175,7 @@ body {
 
 
 .set2_left2 {
-  margin-top: 51%;
+  margin-top: 41%;
 }
 
 
@@ -209,6 +209,13 @@ body {
   color: white;
 }
 
+.sect2_left_statics2 {
+  width: 200px;
+  margin: 0 1rem 0 0 ;
+  padding: 0.5rem;
+  background-color: #6c34a0;
+  color: white;
+}
 
 .sect2_left_static3 {
   width: 200px;
@@ -269,7 +276,7 @@ body {
   height: 500px;
   display: grid;
   place-items: center;
-  padding-top: 10rem ;
+  padding-top: 8rem ;
 }
 
 .section_image {
@@ -354,7 +361,7 @@ body {
 
 @media (max-width:1440px) {
   .set2_left2 {
-    margin-top: 60%;
+    margin-top: 48%;
   }
   .set2_left {
     margin-top: 88%;
@@ -375,16 +382,15 @@ body {
 
 
 .foot_fs {
-  max-width: 600px;
+  /* max-width: 650px; */
   width: 100%;
 }
 
 .purple_card {
   width: 100%;
-  height: 100%;
   background-color: #4E0F8A;
   color: white;
-  padding: 2rem;
+  padding: 3rem;
   display: grid;
 }
 
@@ -404,10 +410,9 @@ body {
 
 .purple_card2 {
   width: 100%;
-  height: 400px;
   background-color: #4E0F8A;
   color: white;
-  padding: 2rem;
+  padding: 3rem;
   display: grid;
 }
 
@@ -485,7 +490,7 @@ body {
   } 
 
   .sect_1 {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .for_width {
@@ -502,6 +507,9 @@ body {
   .foot_info {
     width: 100%;
   }
+  .set2_left {
+    margin-top: 112%;
+  } 
   /* .col-12{
     padding: 0;
   } */
